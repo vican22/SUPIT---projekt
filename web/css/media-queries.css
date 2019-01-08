@@ -1,0 +1,150 @@
+
+
+@media only screen and (max-width: 1200px) {
+    .navigation-bar {
+        font-size: 80%;
+    }
+
+   h3 {
+       font-size: 90%;
+   }
+
+   .city-content a {
+      font-size: 70%;
+   }
+
+   .box p {
+       text-align: justify;
+   }
+}
+
+@media only screen and (max-width: 1023px) {
+   body {font-size: 16px;}
+   section { padding: 60px 0;}
+   .main-nav li {
+    margin-left: 20px;
+}
+   .description-text{
+       width: 80%;
+       margin-left: 10%;
+    }
+    .steps-box:last-child {
+        margin-top: 65px;
+    }
+    .city-content {
+        font-size: 88%;
+    }
+    .plan-box div {
+        padding: 8px;
+    }
+
+    .footer-nav {
+        font-size: 99%;
+    }
+
+    .owner-nav{
+        margin-top: 1px;
+        margin-left: 75px;
+    }
+
+    h2 { font-size: 130%;}
+}
+
+@media only screen and (max-width: 767px) {
+    body {font-size: 14px;}
+    section { padding: 30px 0;}
+
+    .row, 
+    .navigation-bar {
+        padding: 0 5%;
+    }
+
+    .col {width: 100%;}
+
+    /* .main-nav { display: none;} */
+
+    h1 {font-size: 180%;}
+    h2 {font-size: 130%;}
+    .description-text{
+        width: 100%;
+        margin-left: 0%;
+     }
+
+     .steps-box {margin-bottom: 20px;}
+     .steps-box:last-child {
+        margin-top: 20px;
+    }
+
+    .steps-box .app-screen {
+        margin-right: 125px;
+    }
+
+    .btn-app img {
+        margin-right: 50px;
+    }
+
+    .steps-box:last-child { padding-left: 26%;}
+
+    .section-cities {
+        font-size: 90%;
+        margin-left: 50px;
+    }
+
+    .section-cities img {
+        width: 80%;
+        height: auto;
+        margin-left: 40px;
+    }
+
+    .city-content, h3 {
+        margin-left: 100px;
+    }
+
+    .main-nav { 
+        display: none;
+        right: 50%;
+        margin-top: 10px;
+    } 
+    .mobile-nav-icon {display: inline-block; }
+
+    .main-nav li {
+        display: block;
+    }
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 5px 0;
+        font-size: 100%;
+    }
+
+    .fixed-nav {
+        border-bottom: 200px solid #eeecec;
+       
+    }
+    
+    .fixed-nav .mobile-nav-icon i { color: #555;}
+    .fixed-nav .main-nav li a:link,
+    .fixed-nav .main-nav li a:visited {
+        padding: 10px 0;
+        text-decoration: none;
+        color: #555;
+        
+}
+
+
+
+
+@media only screen and (max-width: 480px) {
+.steps-box .app-screen{
+    margin-left: 85px;
+}
+.section-cities{margin: 0;}
+
+.section-subscription .col {
+    margin-top: 7px;
+}
+
+.social-links {margin-right: 100px;}
+}
+}
