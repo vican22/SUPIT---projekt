@@ -27,7 +27,7 @@ data.addEventListener("click", () => {
 
       document.querySelector(".json-table").innerHTML = menu_data;
 
-      const store = document.getElementsByClassName("json-data");
+      const store = document.getElementsByClassName("json-price");
 
       const myModalOrder = document.getElementById("modal-order");
 
@@ -60,14 +60,21 @@ data.addEventListener("click", () => {
       checkoutBtn.addEventListener("click", event => {
         const id = event.path[1].offsetParent.attributes[1].value;
         const price = event.path[1].offsetParent.attributes[2].value;
-        const title = event.path[2].children[0].innerText;
-        const quantity = event.path[1].firstElementChild.value;
+        const title = event.path[2].childNodes[3].innerText;
+        const quantity = parseInt(event.path[1].firstElementChild.value);
+        const remark = event.path[1].children[1].firstElementChild.value.trim();
+        console.log(price);
 
         let taskItem = document.createElement("li");
         taskItem.setAttribute("class", "row list-order");
-        taskItem.innerHTML = `<div class='col span-1-of-8 list-order-id'>${id}</div><div class='col span-5-of-8'>${title}</div><div class='col span-1-of-8 order-quant'>${quantity}</div><div class='col span-1-of-8'>${price}</div>`;
-        taskItem.innerHTML += `<div class="remark">Remark: </div>`;
+        taskItem.innerHTML = `<div class='col span-1-of-8 list-order-id'>${id}</div><div class='col span-5-of-8'>${title}</div><div class='col span-1-of-8 order-quant'>${quantity}</div><div class='col span-1-of-8'>${price}kn</div>`;
         orderList.appendChild(taskItem);
+        if (remark.trim().length > 0) {
+          let remarkItem = document.createElement("div");
+          remarkItem.setAttribute("class", "remark");
+          remarkItem.innerHTML = `${remark}`;
+          orderList.appendChild(remarkItem);
+        }
 
         const listItem = document.querySelectorAll(".list-order");
         let totalPrice = 0;

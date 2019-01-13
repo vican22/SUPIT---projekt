@@ -136,6 +136,7 @@ HEADER
   height: auto;
   left: 8%;
   top: 10px;
+  cursor: pointer;
 }
 
 .order {
@@ -636,13 +637,7 @@ ANIMATIONS
   padding: 20px;
   position: relative;
   overflow: auto;
-}
-
-.modal-title {
-  /* position: absolute;
-  top: 0;
-  left: 0; */
-  /* font-size: 120%; */
+  overflow-x: hidden;
 }
 
 .close {
@@ -724,11 +719,14 @@ ORDERS
 }
 
 .checkout {
-  background-color: #165b88;
   width: 150px;
   height: 200px;
   float: right;
   color: #eeecec;
+}
+
+.checkout span {
+  color: red;
 }
 
 /*
@@ -751,7 +749,7 @@ MODAL ORDER CHECKOUT
 .modal-content-order {
   display: inline-block;
   width: 200px;
-  height: 324px;
+  height: 340px;
   border: 1px solid #555;
   border-radius: 4px;
   position: absolute;
@@ -822,4 +820,24 @@ MODAL ORDER CHECKOUT
 #shopping-cart {
   display: block;
   list-style: none;
+}
+
+.remark {
+  display: block;
+  display: none;
+  width: 100%;
+  background-color: #ff8000;
+  border-radius: 5px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  color: #eeecec;
+}
+
+li:hover + .remark {
+  display: block;
+}
+
+textarea {
+  text-align: left;
 }
