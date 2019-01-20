@@ -134,8 +134,8 @@ HEADER
   position: absolute;
   width: 38px;
   height: auto;
-  left: 8%;
-  top: 10px;
+  left: 5%;
+  top: 12px;
   cursor: pointer;
 }
 
@@ -663,7 +663,6 @@ ORDERS
 
 .json-data {
   border: 1px solid #555;
-  cursor: pointer;
   position: relative;
 }
 
@@ -675,17 +674,21 @@ ORDERS
   position: relative;
 }
 .json-price {
-  text-align: right;
-  vertical-align: middle;
   padding-right: 15px;
   background-color: rgb(233, 198, 45);
-  width: 70px;
+  width: 80px;
   height: 25px;
   float: right;
   border-radius: 4px;
   font-style: oblique;
   margin-right: 15px;
   margin-top: 3%;
+  cursor: pointer;
+}
+
+.json-price:hover,
+.json-price:active {
+  background-color: rgb(253, 209, 11);
 }
 
 #order-popup {
@@ -749,13 +752,12 @@ MODAL ORDER CHECKOUT
 .modal-content-order {
   display: inline-block;
   width: 200px;
-  height: 340px;
   border: 1px solid #555;
   border-radius: 4px;
   position: absolute;
   margin: 5px;
-  bottom: 0;
-  right: 0;
+  top: 45%;
+  left: 50%;
 }
 
 #mod-title {
