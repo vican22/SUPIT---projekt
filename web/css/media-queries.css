@@ -62,6 +62,13 @@
     padding: 30px 0;
   }
 
+  .formCart {
+    display: flex;
+  }
+
+  .list-order {
+    display: flex;
+  }
   .row,
   .navigation-bar {
     padding: 0 5%;
